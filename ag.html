@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Daily Food Excellence Audit</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	<div class="container-fluid">
+		<table id="dayShift" class="table table-bordered">
+
+			<!-- Table headers with dropdown menu and input box for initials --> 
+			<thead>
+				<th>
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Pick a shift
+						</button>
+		  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="#">Day</a>
+							<a class="dropdown-item" href="#">Night</a>
+						</div>
+					</div>
+					<label for="intials">Completed by: </label>
+					<input type="text" id="initials" >
+				</th>
+				<th>Yes</th>
+				<th>No</th>
+				<th id="input">Input</th>		
+			</thead>
+
+			<!-- Table generated via ag.js -->
+			<tbody id="tableData"></tbody>
+		</table>
+		<div id="buttonDiv"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/ag.js"></script>
+</body>
+</html>
