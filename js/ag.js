@@ -19,9 +19,15 @@ $(document).ready(function() {
 		"Additional coaching needed: "
 	]
 
+	// variable needed to make yes/no inputs unique
+	let input_id = 1
+
 	// Loop through each element in task and create table row for 
-	task.forEach(function(t){
-		
+	task.forEach(function(t) {
+
+		// Increment input_id by 1
+		input_id++
+
 		// Creating div/writing to display task data
 		const taskDiv = $("<tr class='table-bordered'>");
 		taskDiv.text(t);
@@ -29,31 +35,25 @@ $(document).ready(function() {
 		// Creating div/checkbox for yes column
 		const yesBox = $("<td>");
 		taskDiv.append(yesBox);
-		const yes = $("<input type='checkbox' id='yes'>")
+		const yes = $("<input type='checkbox'>")
+		yes.attr("id", ("yes" + input_id))
 		yesBox.append(yes);
 
 		// Creating div/checkbox for no column
 		const noBox = $("<td>")
 		taskDiv.append(noBox);
 		const no = $("<input type='checkbox' id='no'>")
+		no.attr("id", ("no" + input_id))
 		noBox.append(no);
 
 		// Creating div/input box
 		const inputBox = $("<td>");
 		taskDiv.append(inputBox);
 		const boxInput = $("<input>")
+		boxInput.attr("id", ("boxInput" + input_id))
 		inputBox.append(boxInput)
 
 		// Append taskDiv to tableData div
 		$("#tableData").append(taskDiv);
 	})
-
-	// Creating button div
-	const saveButton = $("<button type='submit'>")
-
-	// Adding text to button
-	saveButton.text("Save")
-
-	// Adding button below table data
-	$("#buttonDiv").append(saveButton)
 })
