@@ -16,17 +16,17 @@
 			<!-- Table headers with dropdown menu and input box for initials --> 
 			<thead>
 				<th>
-					<div class="dropdown">
-						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Pick a shift
-						</button>
-		  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Day</a>
-							<a class="dropdown-item" href="#">Night</a>
+					<div id="shiftPick">
+						<select class="custom-select">
+							<option selected>Pick a shift</option>
+							<option value="Day">Day</option>
+							<option value="Night">Night</option>
+						</select>
+						<div class="float-right">
+							<label for="intials">Completed by: </label>
+							<input type="text" id="initials" >
 						</div>
 					</div>
-					<label for="intials">Completed by: </label>
-					<input type="text" id="initials" >
 				</th>
 				<th>Yes</th>
 				<th>No</th>
@@ -36,7 +36,7 @@
 			<!-- Table generated via ag.js -->
 			<tbody id="tableData"></tbody>
 		</table>
-		<div id="buttonDiv"></div>
+		<div id="buttonDiv" class="float-right"></div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
