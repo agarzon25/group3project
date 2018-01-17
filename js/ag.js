@@ -33,18 +33,11 @@ $(document).ready(function() {
 		taskDiv.text(t);
 
 		// Creating div/checkbox for yes column
-		const yesBox = $("<td>");
-		taskDiv.append(yesBox);
-		const yes = $("<input type='checkbox'>")
-		yes.attr("id", ("yes" + input_id))
-		yesBox.append(yes);
-
-		// Creating div/checkbox for no column
-		const noBox = $("<td>")
-		taskDiv.append(noBox);
-		const no = $("<input type='checkbox' id='no'>")
-		no.attr("id", ("no" + input_id))
-		noBox.append(no);
+		const doneBox = $("<td>");
+		taskDiv.append(doneBox);
+		const done = $("<input type='checkbox'>")
+		done.attr("id", ("yes" + input_id))
+		doneBox.append(done);
 
 		// Creating div/input box
 		const inputBox = $("<td>");
