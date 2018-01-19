@@ -11,7 +11,11 @@
                 console.log(response);
                 console.log(JSON.stringify(response.weather));
                 console.log(response.weather[0].description);
-                $("#weatherApi").text(response.weather[0].description);
+                console.log(response.weather[0].icon);
+                const iconURL = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png"
+                console.log(iconURL)
+                $("#weatherApi").html("<img src='"+ iconURL + "'>" + response.weather[0].description);          
+                //$("#weatherApi").text(response.weather[0].description);
             });
         $.ajax({
                 url: timeURL,
