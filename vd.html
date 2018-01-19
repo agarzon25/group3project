@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <title>Morning Paperwork</title>
+</head>
+
+<body>
+    <h2 id="weatherApi"></h2>
+    <!-- Add label for div above -->
+    <h2 id="timeApi"></h2> 
+    <table class="table table-bordered" id="table-bordered" id="salesForecast">
+        <thead>
+            <th></th>
+            <th scope="col">Last Year</th>
+            <th scope="col">Forecast</th>
+            <th scope="col">Open - 4pm</th>
+            <th scope="col">4pm - Close</th>
+            <th scope="col">Daily Totals</th>
+            <th scope="col">Last Week</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Sales</th>
+                <td>
+                    <input type='number' id="lastYearSales"></input>
+                </td>
+                <td>
+                    <input type='number' id="salesForecast">
+                </td>
+                <td>
+                    <input type='number' id="morningSales">
+                </td>
+                <td>
+                    <input type='number' id="nightSales">
+                </td>
+                <td>
+                    <input type='number' id="dailyTotalsSales">
+                </td>
+                <td>
+                    <input type='number' id="lastWeekSales">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Labor %</th>
+                <td>
+                    <input type='number' id="lastYearLabor">
+                </td>
+                <td>
+                    <input type='number' id="laborForecast">
+                </td>
+                <td>
+                    <input type='number' id="morningLabor">
+                </td>
+                <td>
+                    <input type='number' id="nightLabor">
+                </td>
+                <td>
+                    <input type='number' id="dailyLabor">
+                </td>
+                <td>
+                    <input type='number' id="lastWeekLabor">
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Labor Hrs</th>
+                <td>
+                    <input type='number' id="lastYearHours">
+                </td>
+                <td>
+                    <input type='number' id="forecastHours">
+                </td>
+                <td>
+                    <input type='number' id="morningHours">
+                </td>
+                <td>
+                    <input type='number' id="nightHours">
+                </td>
+                <td>
+                    <input type='number' id="dailyTotalsHours">
+                </td>
+                <td>
+                    <input type='number' id="lastWeekHours">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Morning Cleaning Checklist</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Service Areas</th>
+                <th scope="col">Prep and Dish Areas</th>
+                <th scope="col">Batter Fry and Walk-in Coolers</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type='checkbox' id="ncdsa1"></input>Windows, Doors and Thresholds Cleaned</td>
+                <td>
+                    <input type='checkbox' id="ncdpd1"></input>Smallware Washed, Sanitized and In Position</td>
+                <td>
+                    <input type='checkbox' id="ncdbw1"></input>Walk-ins: Organize and Clean Shelving and Floors</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' id="ncdsa2"></input>Tables, Chairs and Light Fixtures Clean</td>
+                <td>
+                    <input type='checkbox' id="ncdpd2"></input>Small and Large Side Cups Stocked</td>
+                <td>
+                    <input type='checkbox' id="ncdbw2"></input>Organize Stock Room and Clean Floors</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' id="ncdsa3"></input>Bathrooms Cleaned and Stocked</td>
+                <td>
+                    <input type='checkbox' id="ncdpd3"></input>Floors Cleaned and Garbage Changed</td>
+                <td>
+                    <input type='checkbox' id="ncdbw3"></input>Clean and Organize Mop Sink Areas</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' id="ncdsa4"></input>Bev Station and Garbage Cans Clean</td>
+                <td>
+                    <input type='checkbox' id="ncdpd4"></input>Microwaves, CVAP and Chubb Holder Clean</td>
+                <td>
+                    <input type='checkbox' id="ncdbw4"></input>Batter Station Clean with Parts on Station; Walls</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' id="ncdsa5"></input>Cashier Counter and POS Clean (DT if Applicable)</td>
+                <td>
+                    <input type='checkbox' id="ncdpd5"></input>Wipe Down Ice Machine</td>
+                <td>
+                    <input type='checkbox' id="ncdbw5"></input>FTF Freezer Gaskets, Shelves and Bottom Clean</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' id="ncdsa6"></input>Sauces and Paper Goods Stocked (DT if Applicable)</td>
+                <td>
+                    <input type='checkbox' id="ncdpd6"></input>Prep and 3 Comp Sinks are Clean</td>
+                <td>
+                    <input type='checkbox' id="ncdbw6"></input>Fryer Clean: Sides, Back, Vents, Filter Pan</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' id="ncdsa7"></input>Smallwares Washed, Sanitized and In Position</td>
+                <td>
+                    <input type='checkbox' id="ncdpd7"></input>Pans Clean and Properly Draining</td>
+                <td>
+                    <input type='checkbox' id="ncdbw7"></input>Bird Cage and The Heating Elements Clean</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='checkbox' id="ncdsa8"></input>Soda Nozzle Cleaned</td>
+                <td>
+                    <input type='checkbox' id="ncdpd8"></input>All Floor Drains Clean</td>
+                <td>
+                    <input type='checkbox' id="ncdbw8"></input>Soap and Papertowels at All Handsticks Stocked</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>Opening Manager Initials:</td>
+                <td>
+                    <input type='text' id="omi"></input>
+                </td>
+                <td>Shift Change Manager Initials:</td>
+                <td>
+                    <input type='text' id="scmi"></input>
+                </td>
+                <td>Closing Manager Intials:</td>
+                <td>
+                    <input type='text' id="cmi"></input>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Image Calendar</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Crew</th>
+                <th>Mgmt</th>
+                <th>Cleaning Duties</th>
+                <th>Crew</th>
+                <th>Mgmt</th>
+                <th>Cleaning Duties</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type='text' id="ccc1"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd1"></input>
+                </td>
+                <td>Clean all cooler shelves</td>
+                <td>
+                    <input type='text' id="ccc2"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd2"></input>
+                </td>
+                <td>Detail clean exterior biscuit oven</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='text' id="ccc3"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd3"></input>
+                </td>
+                <td>Clean and organize shelves in prep area</td>
+                <td>
+                    <input type='text' id="ccc4"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd4"></input>
+                </td>
+                <td>Deck scrub lobby floors and restrooms</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='text' id="ccc5"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd5"></input>
+                </td>
+                <td>Organize office area</td>
+                <td>
+                    <input type='text' id="ccc6"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd6"></input>
+                </td>
+                <td>Scrub walls in walk-in cooler</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='text' id="ccc7"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd7"></input>
+                </td>
+                <td>Clean gaskets on reach-in freezers and refrigerator</td>
+                <td>
+                    <input type='text' id="ccc8"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd8"></input>
+                </td>
+                <td>Clean evaporator coils on all refrigeration</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='text' id="ccc9"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd9"></input>
+                </td>
+                <td>Polish all stainless steel in service area</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type='text' id="ccc10"></input>
+                </td>
+                <td>
+                    <input type='text' id="mcd10"></input>
+                </td>
+                <td>Clean high chairs</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="projectOne.js"></script>
+</body>
+
+</html>
