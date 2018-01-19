@@ -49,6 +49,15 @@ body {
 	left:8%;
 	
 }
+
+#salesForecast {
+	width:50%;
+
+}
+.modal-body {
+overflow-x:auto;
+}
+
 /* th, td {
     border: 1px solid black;
     text-align: center;
