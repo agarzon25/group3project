@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+
+	<title>Daily Safe Count</title>
+</head>
+  <div id='WSCdiv'>
+    	<h1 id="WSCh1">Daily Safe Count</h1>
+      
+    	<table id="WSCtable" class="table table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">Date</th>
+          <td colspan="3"><input type="Date" id="WSCDate"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Rolled<br>Coins</th>
+          <td>Open</td>
+          <td>Mid</td>
+          <td>Close</td>
+          </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Pennies</th>
+          <td><input type="number" id="WSCOpenPennies"></td>
+          <td><input type="number" id="WSCMidPennies"></td>
+          <td><input type="number" id="WSCClosePennies"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Nickels</th>
+          <td><input type="number" id="WSCOpenNickels"></td>
+          <td><input type="number" id="WSCMidNickels"></td>
+          <td><input type="number" id="WSCCloseNickels"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Dimes</th>
+          <td><input type="number" id="WSCOpenDimes"></td>
+          <td><input type="number" id="WSCMidDimes"></td>
+          <td><input type="number" id="WSCCloseDimes"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Quarters</th>
+          <td><input type="number" id="WSCOpenQuarters"></td>
+          <td><input type="number" id="WSCMidQuarters"></td>
+          <td><input type="number" id="WSCCloseQuarters"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Bills</th>
+          <td>Open</td>
+          <td>Mid</td>
+          <td>Close</td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">1's</th>
+          <td><input type="number" id="WSCOpenOnes"></td>
+          <td><input type="number" id="WSCMidOnes"></td>
+          <td><input type="number" id="WSCCloseOnes"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">5's</th>
+          <td><input type="number" id="WSCOpenFives"></td>
+          <td><input type="number" id="WSCMidFives"></td>
+          <td><input type="number" id="WSCCloseFives"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">10's</th>
+          <td><input type="number" id="WSCOpentens"></td>
+          <td><input type="number" id="WSCMidtens"></td>
+          <td><input type="number" id="WSCClosetens"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">20's</th>
+          <td><input type="number" id="WSCOpenTwenty"></td>
+          <td><input type="number" id="WSCMidTwenty"></td>
+          <td><input type="number" id="WSCCloseTwenty"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">50's</th>
+          <td><input type="number" id="WSCOpenFithy"></td>
+          <td><input type="number" id="WSCMidFithy"></td>
+          <td><input type="number" id="WSCCloseFithy"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">100's</th>
+          <td><input type="number" id="WSCOpenHundreds"></td>
+          <td><input type="number" id="WSCMidHundreds"></td>
+          <td><input type="number" id="WSCCloseHundreds"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Safe<br>Count $</th>
+          <td><input type="number" id="WSCOpenSafeCount"></td>
+          <td><input type="number" id="WSCMidSafeCount"></td>
+          <td><input type="number" id="WSCCloseSafeCount"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Register $</th>
+          <td><input type="number" id="WSCOpenRegister"></td>
+          <td><input type="number" id="WSCMidRegister"></td>
+          <td><input type="number" id="WSCCloseRegister"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Total Safe</th>
+          <td><input type="number" id="WSCOpenTotalSafe"></td>
+          <td><input type="number" id="WSCMidTotalSafe"></td>
+          <td><input type="number" id="WSCCloseTotalSafe"></td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row"></th>
+          <td>Open</td>
+          <td>Mid</td>
+          <td>Close</td>
+        </tr>
+        <tr class="WSCsmallCell">
+          <th scope="row">Mgr Initials</th>
+          <td><input type="text" id="WSCOpenMgrInitials"></td>
+          <td><input type="text" id="WSCMidMgrInitials"></td>
+          <td><input type="text" id="WSCCloseMgrInitials"></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<div id="RDLdiv">
+
+  <h1 id="RDLh1">Restaurant Deposit Log</h1>
+
+    <table id="RDLtable" class="table table-striped">
+
+    <thead> 
+      <tr>
+        <th class="RDLth" scope="col"   >Date</th>
+        <th class="RDLth" scope="col" colspan="4"><input type="Date" id="WSCDate"></th>
+      <tr>
+      <tr>  
+        <th class="RDLth" scope="row"></th>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td class="smallFontCell">Total Daily<br>Deposit</div></td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">POS ideal<br>Deposit</th>
+        <td><input type="number" id="RDLPosIdealDeposit1"></td>
+        <td><input type="number" id="RDLPosIdealDeposit2"></td>
+        <td><input type="number" id="RDLPosIdealDeposit3"></td>
+        <td><input type="number" id="RDLPosIdealDepositTotal"></td>
+      </tr>
+      <tr>
+        <th scope="row">Manager<br>Bank<br>Deposit</th>
+        <td><input type="number" id="RDLManagerBankDeposit1"></td>
+        <td><input type="number" id="RDLManagerBankDeposit2"></td>
+        <td><input type="number" id="RDLManagerBankDeposit3"></td>
+        <td><input type="number" id="RDLManagerBankDepositTotal"></td>
+      </tr>
+      <tr>
+        <th scope="row">+/-<br>Variance<br>(should<br>be $0)</th>
+        <td><input type="number" id="RDLMondayVariance1"></td>
+        <td><input type="number" id="RDLMondayVariance2"></td>
+        <td><input type="number" id="RDLMondayVariance3"></td>
+        <td><input type="number" id="RDLMondayVarianceTotal"></td>
+      </tr>
+      <tr>
+        <th scope="row">MGR Signature</th>
+        <td><input type="number" id="RDLMondayMGRsign1"></td>
+        <td><input type="number" id="RDLMondayMGRsign2"></td>
+        <td><input type="number" id="RDLMondayMGRsign3"></td>
+        <td><input type="number" id="RDLMondayMGRsignTotal"></td>
+      </tr>
+      <tr>
+        <th scope="row" id="RDLmgrTookSign">Signature of MGR<br>that took all the<br>deposits from the day<br>to the bank (signing<br>here means you took<br>each deposit listed)</th>
+        <td><input type="number" id="RDLMondayMGRtookDeposits1"></td>
+        <td><input type="number" id="RDLMondayMGRtookDeposits2"></td>
+        <td><input type="number" id="RDLMondayMGRtookDeposits3"></td>
+        <td><input type="number" id="RDLMondayMGRtookDepositsTotal"></td>
+      </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>
