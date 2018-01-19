@@ -1,0 +1,9 @@
+#foodTable input{
+	background: none;
+	border: none;
+}
+#foodTable td, #foodTable th{
+	border: solid;
+	border-width: 1px;
+	border-color
+}
