@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popeye's Fried Chicken</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="andrewjs.js"></script>
+</body>
+<link rel="stylesheet" type="text/css" href="projectCSS1.css">
+</head>
+<body>
+<div class="row" id = "position1">
+  <div class="col-md-6">
+    <div class= "card-header">
+        <h2 class = "card-title">Physical Currency</h2>
+      
+        <div class="card-body">         
+          <p class="card-text"> Bank Deposits and Safe Count </p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#depositModal"> Deposits Today
+          </button>
+        </div>
+      </div>
+  
+      <div class= "card-header">
+        <h2 class = "card-title">Daily Tasks</h2>     
+        <div class="card-body">         
+          <p class="card-text"> Morning Review </p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dailyTasksModal"> Morning Review
+          </button>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class = "col-md-6">
+      <div class= "card-header">
+        <h2 class = "card-title">Food Excellence</h2>
+         <div class="card-body">         
+          <p class="card-text"> HACCP </p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#foodExcellenceModal"> HACCP
+          </button>
+        </div>
+      </div>
+   
+      <div class= "card-header">
+        <h2 class = "card-title">QC</h2>
+          <div class="card-body">         
+          <p class="card-text"> Quality Assurance </p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DFEModal"> Excellence Assurance
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="depositModal" tabindex="-1" role="dialog" aria-labelledby="depositModal1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="depositModal1">Bank Deposits</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+      <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Day</th>
+      <th scope="col"></th>
+      <th scope="col">POS ideal<br>Deposit</th>
+      <th scope="col">Manager Bank Deposit</th>
+      <th scope="col">+/-<br>Variance<br>(should<br>be $0)</th>
+      <th scope="col">MGR Signature</th>
+      <th scope="col" class="smallFontCell">Signature of MGR<br>that took all the<br>deposits from the day<br>to the bank (signing<br>here means you took<br>each deposit listed)</th>
+    </tr>
+      </thead>
+      <tbody>
+    <tr>
+      <th scope="row"></th>
+      <td>Monday</td>
+      <td><div class="bottomLine">1</div><div class="bottomLine">2</div><div class="bottomLine">3</div><div class="smallFontCell">Total Daily<br>Deposit</div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+    </tr>
+    <tr> 
+      <th scope="row"></th>
+      <td>Tuesday</td>
+      <td><div class="bottomLine">1</div><div class="bottomLine">2</div><div class="bottomLine">3</div><div class="smallFontCell">Total Daily<br>Deposit</div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+    </tr>
+    <tr> 
+      <th scope="row"></th>
+      <td>Wednesday</td>
+      <td><div class="bottomLine">1</div><div class="bottomLine">2</div><div class="bottomLine">3</div><div class="smallFontCell">Total Daily<br>Deposit</div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+    </tr>
+    <tr> 
+      <th scope="row"></th>
+      <td>Thurday</td>
+      <td><div class="bottomLine">1</div><div class="bottomLine">2</div><div class="bottomLine">3</div><div class="smallFontCell">Total Daily<br>Deposit</div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+    </tr>
+    <tr> 
+      <th scope="row"></th>
+      <td>Friday</td>
+      <td><div class="bottomLine">1</div><div class="bottomLine">2</div><div class="bottomLine">3</div><div class="smallFontCell">Total Daily<br>Deposit</div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+    </tr>
+    <tr> 
+      <th scope="row"></th>
+      <td>Saturday</td>
+      <td><div class="bottomLine">1</div><div class="bottomLine">2</div><div class="bottomLine">3</div><div class="smallFontCell">Total Daily<br>Deposit</div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+    </tr>
+    <tr> 
+      <th scope="row"></th>
+      <td>Sunday</td>
+      <td><div class="bottomLine">1</div><div class="bottomLine">2</div><div class="bottomLine">3</div><div class="smallFontCell">Total Daily<br>Deposit</div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+      <td><div class="bottomLine"></div><div class="bottomLine"></div><div class="bottomLine"></div><div></div></td>
+    </tr>
+    
+      </tbody>
+    </table> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="dailyTasksModal" tabindex="-1" role="dialog" aria-labelledby="dailyTasksModal1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dailyTasksModal1">Morning Tasks</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div>
+        <h2 id="dateApi" id="weatherApi"></h2>
+    </div>
+    <table class="table table-bordered" id="table-bordered" id="salesForecast">
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">Last Year</th>
+                <th scope="col">Forecast</th>
+                <th scope="col">Open - 4pm</th>
+                <th scope="col">4pm - Close</th>
+                <th scope="col">Daily Totals</th>
+                <th scope="col">Last Week</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Sales</th>
+                <td id="lastYearSales">$</td>
+                <td id="salesForecast">$</td>
+                <td id="morningSales">$</td>
+                <td id="nightSales">$</td>
+                <td id="dailyTotalsSales">$</td>
+                <td id="lastWeekSales">$</td>
+            </tr>
+            <tr>
+                <th scope="row">Labor %</th>
+                <td id="lastYearLabor">%</td>
+                <td id="laborForecast">%</td>
+                <td id="morningLabor">%</td>
+                <td id="nightLabor">%</td>
+                <td id="dailyLabor">%</td>
+                <td id="lastWeekLabor">%</td>
+            </tr>
+            <tr>
+                <th scope="row">Labor Hrs</th>
+                <td id="lastYearHours">hrs</td>
+                <td id="forecastHours">hrs</td>
+                <td id="morningHours">hrs</td>
+                <td id="nightHours">hrs</td>
+                <td id="dailyTotalsHours">hrs</td>
+                <td id="lastWeekHours">hrs</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Morning Cleaning Checklist</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Service Areas</th>
+                <th scope="col">Prep and Dish Areas</th>
+                <th scope="col">Batter Fry and Walk-in Coolers</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="ncdsa1">Windows, Doors and Thresholds Cleaned</td>
+                <td id="ncdpd1">Smallware Washed, Sanitized and In Position</td>
+                <td id="ncdbw1">Walk-ins: Organize and Clean Shelving and Floors</td>
+            </tr>
+            <tr>
+                <td id="ncdsa2">Tables, Chairs and Light Fixtures Clean</td>
+                <td id="ncdpd2">Small and Large Side Cups Stocked</td>
+                <td id="ncdbw2">Organize Stock Room and Clean Floors</td>
+            </tr>
+            <tr>
+                <td id="ncdsa3">Bathrooms Cleaned and Stocked</td>
+                <td id="ncdpd3">Floors Cleaned and Garbage Changed</td>
+                <td id="ncdbw3">Clean and Organize Mop Sink Areas</td>
+            </tr>
+            <tr>
+                <td id="ncdsa4">Bev Station and Garbage Cans Clean</td>
+                <td id="ncdpd4">Microwaves, CVAP and Chubb Holder Clean</td>
+                <td id="ncdbw4">Batter Station Clean with Parts on Station; Walls</td>
+            </tr>
+            <tr>
+                <td id="ncdsa5">Cashier Counter and POS Clean (DT if Applicable)</td>
+                <td id="ncdpd5">Wipe Down Ice Machine</td>
+                <td id="ncdbw5">FTF Freezer Gaskets, Shelves and Bottom Clean</td>
+            </tr>
+            <tr>
+                <td id="ncdsa6">Sauces and Paper Goods Stocked (DT if Applicable)</td>
+                <td id="ncdpd6">Prep and 3 Comp Sinks are Clean</td>
+                <td id="ncdbw6">Fryer Clean: Sides, Back, Vents, Filter Pan</td>
+            </tr>
+            <tr>
+                <td id="ncdsa7">Smallwares Washed, Sanitized and In Position</td>
+                <td id="ncdpd7">Pans Clean and Properly Draining</td>
+                <td id="ncdbw7">Bird Cage and The Heating Elements Clean</td>
+            </tr>
+            <tr>
+                <td id="ncdsa8">Soda Nozzle Cleaned</td>
+                <td id="ncdpd8">All Floor Drains Clean</td>
+                <td id="ncdbw8">Soap and Papertowels at All Handsticks Stocked</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>Opening Manager Initials:</td>
+                <td>_____</td>
+                <td>Shift Change Manager Initials:</td>
+                <td>_____</td>
+                <td>Closing Manager Intials:</td>
+                <td>_____</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Image Calendar</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Crew</th>
+                <th>Mgmt</th>
+                <th>Cleaning Duties</th>
+                <th>Crew</th>
+                <th>Mgmt</th>
+                <th>Cleaning Duties</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Clean all cooler shelves</td>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Detail clean exterior biscuit oven</td>
+            </tr>
+            <tr>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Clean and organize shelves in prep area</td>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Deck scrub lobby floors and restrooms</td>
+            </tr>
+            <tr>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Organize office area</td>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Scrub walls in walk-in cooler</td>
+            </tr>
+            <tr>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Clean gaskets on reach-in freezers and refrigerator</td>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Clean evaporator coils on all refrigeration</td>
+            </tr>
+            <tr>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Polish all stainless steel in service area</td>
+            </tr>
+            <tr>
+                <td>_____</td>
+                <td>_____</td>
+                <td>Clean high chairs</td>
+            </tr>
+        </tbody>
+    </table> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="foodExcellenceModal" tabindex="-1" role="dialog" aria-labelledby="foodExcellenceModal1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="foodExcellenceModal1">Morning Tasks</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h1 id="Templog">Popeyes Food Excellence and HACCP Log</h1>
+
+  <!-- My dropdown bottom for day shifts -->
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select Shift
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Opening</a>
+    <a class="dropdown-item" href="#">2PM-3PM</a>
+    <a class="dropdown-item" href="#">7PM-8PM</a>
+    <a class="dropdown-item" href="#">Closing</a>
+  </div>
+</div>
+
+<br/>
+  <!-- My table graft -->
+<table class="table table-striped" id="foodTable">
+
+  <!-- Coolers layout. ids for Temp,AC, and Initials table are cTemp,cAC,cInitials[1,2,3,4,5,6,7] -->   
+<div id="Coolers">  
+  <thead >
+    <tr>
+      <th scope="col">Coolers</th>
+      <th scope="col">Temp</th>
+      <th scope="col">AC</th>
+      <th scope="col">Initials</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Sandwich cooler [34-40ºF]</th>
+      <td id="cTemp1"><input type="text"></td>
+      <td id="cAC1"><input type="text"></td>
+      <td id="cInitials1"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Buiscuit cooler [34-40ºF]</th>
+      <td id="cTemp2"><input type="text"></td>
+      <td id="cAC2"><input type="text"></td>
+      <td id="cInitials2"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Reach-in cooler [34-40ºF]</th>
+      <td id="cTemp3"><input type="text"></td>
+      <td id="cAC3"><input type="text"></td>
+      <td id="cInitials3"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Walk-in cooler  [34-40ºF]</th>
+      <td id="cTemp4"><input type="text"></td>
+      <td id="cAC4"><input type="text"></td>
+      <td id="cInitials4"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Seasoned chicken  [34-40ºF]</th>
+      <td id="cTemp5"><input type="text"></td>
+      <td id="cAC5"><input type="text"></td>
+      <td id="cInitials5"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Tenders [34-40ºF]</th>
+      <td id="cTemp6"><input type="text"></td>
+      <td id="cAC6"><input type="text"></td>
+      <td id="cInitials6"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Cole Slaw [34-40ºF]</th>
+      <td id="cTemp7"><input type="text"></td>
+      <td id="cAC7"><input type="text"></td>
+      <td id="cInitials7"><input type="text"></td>
+    </tr>
+ </div>
+
+ <!-- Freezers layout. ids for Temp,AC, and Initials table are fTemp,fAC,fInitials[1,2] -->
+ <div id="Freezers">
+   <thead>
+    <tr>
+      <th scope="col">Freezers</th>
+      <th scope="col">Temp</th>
+      <th scope="col">AC</th>
+      <th scope="col">Initials</th>
+    </tr>
+  </thead>
+    <tr>
+      <th scope="row">Reach-in freezer  [-10º-0ºF]</th>
+      <td id="fTemp1"><input type="text"></td>
+      <td id="fAC1"><input type="text"></td>
+      <td id="fInitials1"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Walk-in freezer [-10º-0ºF]</th>
+      <td id="fTemp2"><input type="text"></td>
+      <td id="fAC2"><input type="text"></td>
+      <td id="fInitials2"><input type="text"></td>
+    </tr>
+ </div>
+
+ <!-- HeatedEquipment layout. ids for Temp,AC, and Initials table are heTemp,heAC,heInitials[1,2,3,4,5,6,7,8,9] -->
+ <div id="HeatedEquipment">
+    <thead>
+    <tr>
+      <th scope="col">Heated Equipment</th>
+      <th scope="col">Temp</th>
+      <th scope="col">AC</th>
+      <th scope="col">Initials</th>
+    </tr>
+  </thead>
+    <tr>
+      <th scope="row">CVAP [160ºF] Temp 160 - Texture 10</th>
+      <td id="heTemp1"><input type="text"></td>
+      <td id="heAC1"><input type="text"></td>
+      <td id="heInitials1"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Steamtable [170ºF]</th>
+      <td id="heTemp2"><input type="text"></td>
+      <td id="heAC2"><input type="text"></td>
+      <td id="heInitials2"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Mild fryer 1 [340ºF gas, 330ºF electric]</th>
+      <td id="heTemp3"><input type="text"></td>
+      <td id="heAC3"><input type="text"></td>
+      <td id="heInitials3"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Mild fryer 2 [340ºF gas, 330ºF electric]</th>
+      <td id="heTemp4"><input type="text"></td>
+      <td id="heAC4"><input type="text"></td>
+      <td id="heInitials4"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Spicy fryer 1 [340ºF gas, 330ºF electric]</th>
+      <td id="heTemp5"><input type="text"></td>
+      <td id="heAC5"><input type="text"></td>
+      <td id="heInitials5"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Spicy fryer 2 [340ºF gas, 330ºF electric]</th>
+      <td id="heTemp6"><input type="text"></td>
+      <td id="heAC6"><input type="text"></td>
+      <td id="heInitials6"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Basket fryer 1 [340ºF gas, 330ºF electric]</th>
+      <td id="heTemp7"><input type="text"></td>
+      <td id="heAC7"><input type="text"></td>
+      <td id="heInitials7"><input type="text"></td>
+    </tr>
+     <tr>
+      <th scope="row">Basket fryer 2 [340ºF gas, 330ºF electric]</th>
+      <td id="heTemp8"><input type="text"></td>
+      <td id="heAC8"><input type="text"></td>
+      <td id="heInitials8"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Other fryer/quipment</th>
+      <td id="heTemp9"><input type="text"></td>
+      <td id="heAC9"><input type="text"></td>
+      <td id="heInitials9"><input type="text"></td>
+    </tr>
+ </div>
+ <!-- ReadytoEatChicken layout. ids for Temp,AC, and Initials table are reTemp,reAC,reInitials[1,2,3,4] -->
+ <div id="ReadytoEatChicken">
+  <thead>
+    <tr>
+      <th scope="col">Ready to Eat Chicken</th>
+      <th scope="col">Temp</th>
+      <th scope="col">AC</th>
+      <th scope="col">Initials</th>
+    </tr>
+  </thead>
+    <tr>
+      <th scope="row">Scipy breast drained for 1 min [165ºF]</th>
+      <td id="recTemp1"><input type="text"></td>
+      <td id="recAC1"><input type="text"></td>
+      <td id="recInitials1"><input type="text"></td>
+    </tr>
+     <tr>
+      <th scope="row">Mild breast drained for 1 min [165ºF]</th>
+      <td id="recTemp2"><input type="text"></td>
+      <td id="recAC2"><input type="text"></td>
+      <td id="recInitials2"><input type="text"></td>
+    <tr>
+    <tr>
+      <th scope="row">Tender on the line [160ºF or above]</th>
+      <td id="recTemp3"><input type="text"></td>
+      <td id="recAC3"><input type="text"></td>
+      <td id="recInitials3"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">LTO on the line [160ºF or above]</th>
+      <td id="recTemp4"><input type="text"></td>
+      <td id="recAC4"><input type="text"></td>
+      <td id="recInitials4"><input type="text"></td>
+    </tr>
+ </div>
+ <!-- CoolersTemp layout. ids for Temp,AC, and Initials table are bsTemp,bsAC,bsInitials[1,2,3,4] -->
+ <div id="BatterStation">
+    <thead>
+    <tr>
+      <th scope="col">Batter Station</th>
+      <th scope="col">Temp</th>
+      <th scope="col">AC</th>
+      <th scope="col">Initials</th>
+    </tr>
+  </thead>
+    <tr>
+      <th scope="row">Ice Bath [34º-40ºF]</th>
+      <td id="bsTemp1"><input type="text"></td>
+      <td id="bsAC1"><input type="text"></td>
+      <td id="bsInitials1"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Poultry batter [34º-40ºF]</th>
+      <td id="bsTemp2"><input type="text"></td>
+      <td id="bsAC2"><input type="text"></td>
+      <td id="bsInitials2"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Seasoned chicken 34º-40ºF?</th>
+      <td id="bsTemp3"><input type="text"></td>
+      <td id="bsAC3"><input type="text"></td>
+      <td id="bsInitials3"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Lids present on chicken pans?</th>
+      <td id="bsTemp4"><input type="text"></td>
+      <td id="bsAC4"><input type="text"></td>
+      <td id="bsInitials4"><input type="text"></td>
+    </tr>
+ </div>
+ <!-- SecondaryBatterStation layout. ids for Temp,AC, and Initials table are cTemp,cAC,cInitials[1,2,3,4] -->
+ <div id="SecondaryBatterStation">
+  <thead>
+    <tr>
+      <th scope="col">Secondary Batter Station/LTO Cart</th>
+      <th scope="col">Temp</th>
+      <th scope="col">AC</th>
+      <th scope="col">Initials</th>
+    </tr>
+  </thead>
+    <tr>
+      <th scope="row">Ica Bath [34º-40ºF]</th>
+      <td id="sbsTemp1"><input type="text"></td>
+      <td id="sbsAC1"><input type="text"></td>
+      <td id="sbsInitials1"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Poultry batter [34º-40ºF]</th>
+      <td id="sbsTemp2"><input type="text"></td>
+      <td id="sbsAC2"><input type="text"></td>
+      <td id="sbsInitials2"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Seasoned chicken 34º-40ºF?</th>
+      <td id="sbsTemp3"><input type="text"></td>
+      <td id="sbsAC3"><input type="text"></td>
+      <td id="sbsInitials3"><input type="text"></td>
+    </tr>
+    <tr>
+      <th scope="row">Lids present on chicken pans?</th>
+      <td id="sbsTemp4"><input type="text"></td>
+      <td id="sbsAC4"><input type="text"></td>
+      <td id="sbsInitials4"><input type="text"></td>
+    </tr>
+</div>
+  </tbody>
+</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="DFEModal" tabindex="-1" role="dialog" aria-labelledby="DFEModal1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="DFEModal1">Quality Assurance</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+    <table id="dayShift" class="table table-bordered">
+
+      <!-- Table headers with dropdown menu and input box for initials --> 
+      <thead>
+        <th>
+          <div id="shiftPick">
+            <select class="custom-select">
+              <option selected>Pick a shift</option>
+              <option value="Day">Day</option>
+              <option value="Night">Night</option>
+            </select>
+            <div class="float-right">
+              <label for="intials">Completed by: </label>
+              <input type="text" id="initials" >
+            </div>
+          </div>
+        </th>
+        <th>Yes</th>
+        <th>No</th>
+        <th id="input">Input</th>   
+      </thead>
+
+      <!-- Table generated via ag.js -->
+      <tbody id="tableData"></tbody>
+    </table>
+    <div id="buttonDiv" class="float-right"></div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
