@@ -68,7 +68,19 @@ const storeReport = {
 	PolishSSEmployee: "incomplete",
 	PolishSSManager: "incomplete",
 	CleanHighchairsEmployee: "incomplete",
-	CleanHighchairsManager: "incomplete"
+	CleanHighchairsManager: "incomplete",
+	ReadyToEatSpicyTemp:0,
+	ReadyToEatSpicyAC: 0,
+	ReadyToEatSpicyInit:"",
+	ReadyToEatMildTemp: 0,
+	ReadyToEatMildAC: 0,
+	ReadyToEatMildInit: "",
+	ReadyToEatTenderTemp: 0,
+	ReadyToEatTenderInit: 0,
+	ReadyToEatTenderAC: "",
+	ReadyToEatLTOTemp: 0,
+	ReadyToEatLTOInit: 0,
+	ReadyToEatLTOAC: "",
 
 	
 
@@ -233,6 +245,7 @@ $("#setProperties2").click(function(){
 	if ($("#mcd10").prop("checked")) {
 		storeReport.CleanHighchairsManager = "Giranamo";
 	};
+	
 
 
 
@@ -242,7 +255,19 @@ $("#setProperties2").click(function(){
 
 $("#setProperties3").click(function(){
 	//lastYearSales1 = $("#lastYearSales").val();
-	 storeReport.Temp = $("#cTemp1").val(),
+	storeReport.Temp = $("#cTemp1").val(),
+	storeReport.ReadyToEatSpicyTemp = $("#recTemp1").val();
+	storeReport.ReadyToEatSpicyAC = $("#recAC1").val();
+	storeReport.ReadyToEatSpicyInit = $("#recInitials1").val();
+	storeReport.ReadyToEatMildTemp = $("#recTemp2").val();
+	storeReport.ReadyToEatMildAC = $("#recAC2").val();
+	storeReport.ReadyToEatMildInit = $("#recInitials2").val();
+	storeReport.ReadyToEatTenderTemp = $("#recTemp3").val();
+	storeReport.ReadyToEatTenderInit = $("#recAC3").val();
+	storeReport.ReadyToEatTenderAC = $("#recInitials3").val();
+	storeReport.ReadyToEatLTOTemp = $("#recTemp4").val();
+	storeReport.ReadyToEatLTOInit = $("#recAC4").val();
+	storeReport.ReadyToEatLTOAC = $("#recInitials4").val();
 	//LYS1: 
 
 	console.log(storeReport);
