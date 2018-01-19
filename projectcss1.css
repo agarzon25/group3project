@@ -10,10 +10,14 @@
 	text-align:center;
 }
 .card-body {
-	background-color:white;
+	background-color:darkorange;
 	height:80%;
 	text-align:center;
 	
+}
+
+.card-body:hover {
+	background-color:#D92E2E;
 }
 .cardCall {
 	margin-top:1px;
@@ -45,8 +49,8 @@ body {
 }  
 #position1 {
 	position:relative;
-	top:280px;
-	left:8%;
+	top:20px;
+	left:4%;
 	
 }
 
@@ -56,6 +60,16 @@ body {
 }
 .modal-body {
 overflow-x:auto;
+}
+#topIntro1 {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 180px;
+	text-align: center;
+	color:orange;
+}
+#topIntro1:hover {
+	font-size: 250px;
+	color:#D92E2E;
 }
 
 /* th, td {
