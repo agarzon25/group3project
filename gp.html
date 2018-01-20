@@ -7,8 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/gp.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<title>Daily Safe Count</title>
 </head>
@@ -71,15 +72,15 @@
         </tr>
         <tr class="WSCsmallCell">
           <th scope="row">10's</th>
-          <td><input type="number" id="WSCOpentens"></td>
-          <td><input type="number" id="WSCMidtens"></td>
-          <td><input type="number" id="WSCClosetens"></td>
+          <td><input type="number" id="WSCOpenTens"></td>
+          <td><input type="number" id="WSCMidTens"></td>
+          <td><input type="number" id="WSCCloseTens"></td>
         </tr>
         <tr class="WSCsmallCell">
           <th scope="row">20's</th>
-          <td><input type="number" id="WSCOpenTwenty"></td>
-          <td><input type="number" id="WSCMidTwenty"></td>
-          <td><input type="number" id="WSCCloseTwenty"></td>
+          <td><input type="number" id="WSCOpenTwenties"></td>
+          <td><input type="number" id="WSCMidTwenties"></td>
+          <td><input type="number" id="WSCCloseTwenties"></td>
         </tr>
         <tr class="WSCsmallCell">
           <th scope="row">50's</th>
@@ -164,27 +165,29 @@
       </tr>
       <tr>
         <th scope="row">+/-<br>Variance<br>(should<br>be $0)</th>
-        <td><input type="number" id="RDLMondayVariance1"></td>
-        <td><input type="number" id="RDLMondayVariance2"></td>
-        <td><input type="number" id="RDLMondayVariance3"></td>
-        <td><input type="number" id="RDLMondayVarianceTotal"></td>
+        <td><input type="number" id="RDLVariance1"></td>
+        <td><input type="number" id="RDLVariance2"></td>
+        <td><input type="number" id="RDLVariance3"></td>
+        <td><input type="number" id="RDLVarianceTotal"></td>
       </tr>
       <tr>
         <th scope="row">MGR Signature</th>
-        <td><input type="number" id="RDLMondayMGRsign1"></td>
-        <td><input type="number" id="RDLMondayMGRsign2"></td>
-        <td><input type="number" id="RDLMondayMGRsign3"></td>
-        <td><input type="number" id="RDLMondayMGRsignTotal"></td>
+        <td><input type="number" id="RDLMGRsign1"></td>
+        <td><input type="number" id="RDLMGRsign2"></td>
+        <td><input type="number" id="RDLMGRsign3"></td>
+        <td><input type="number" id="RDLMGRsignTotal"></td>
       </tr>
       <tr>
         <th scope="row" id="RDLmgrTookSign">Signature of MGR<br>that took all the<br>deposits from the day<br>to the bank (signing<br>here means you took<br>each deposit listed)</th>
-        <td><input type="number" id="RDLMondayMGRtookDeposits1"></td>
-        <td><input type="number" id="RDLMondayMGRtookDeposits2"></td>
-        <td><input type="number" id="RDLMondayMGRtookDeposits3"></td>
-        <td><input type="number" id="RDLMondayMGRtookDepositsTotal"></td>
+        <td><input type="number" id="RDLMGRtookDeposits1"></td>
+        <td><input type="number" id="RDLMGRtookDeposits2"></td>
+        <td><input type="number" id="RDLMGRtookDeposits3"></td>
+        <td><input type="number" id="RDLMGRtookDepositsTotal"></td>
       </tr>
     </tbody>
 </table>
 </div>
+<button type="button" class="btn btn-primary" id="GPsave">Save</button>
+<script src="js/gp.js"></script>
 </body>
 </html>

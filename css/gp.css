@@ -28,16 +28,14 @@
 	width: 30px;
 }
 #WSCdiv input {
-	width: 30px;
+	width: 100%;
  	background: none;
  	border: none;
  	text-align: center;
- 	column-width: 20px;
 }
 #RDLdiv input {
-	width: 30px;
+	width: 100%;
  	background: none;
  	border: none;
  	text-align: center;
- 	column-width: 20px;
 }
