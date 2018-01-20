@@ -28,17 +28,16 @@
 	width: 30px;
 }
 #WSCdiv input {
-	width: 100%;
+	width: 30px;
  	background: none;
  	border: none;
  	text-align: center;
+ 	column-width: 20px;
 }
 #RDLdiv input {
-	width: 100%;
+	width: 30px;
  	background: none;
  	border: none;
  	text-align: center;
-}
-.TableDate {
-	width: 90px;
+ 	column-width: 20px;
 }
