@@ -1,0 +1,44 @@
+
+#RDLtable th, #WSCtable th, #RDLtable td, #WSCtable td {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+.smallFontCell {
+	font-size: 7px;
+	vertical-align: middle;
+	padding-top: 7px;
+}
+#RDLmgrTookSign {
+	font-size: 9px;
+}
+#RDLvariance {
+	font-size: 9px;
+}
+#WSCdiv, #RDLdiv {
+	float: left;
+    width: 340px;
+    padding-left: 50px;
+    margin: 50px;
+}
+#WSCdiv th, #WSCdiv td {
+	width: 30px;
+}
+#RDLdiv th, #RDLdiv td {
+	width: 30px;
+}
+#WSCdiv input {
+	width: 100%;
+ 	background: none;
+ 	border: none;
+ 	text-align: center;
+}
+#RDLdiv input {
+	width: 100%;
+ 	background: none;
+ 	border: none;
+ 	text-align: center;
+}
+.TableDate {
+	width: 90px;
+}
