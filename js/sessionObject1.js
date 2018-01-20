@@ -255,23 +255,27 @@ $("#setProperties2").click(function(){
 
 $("#setProperties3").click(function(){
 	//lastYearSales1 = $("#lastYearSales").val();
-	storeReport.Temp = $("#cTemp1").val(),
-	storeReport.ReadyToEatSpicyTemp = $("#recTemp1").val();
-	storeReport.ReadyToEatSpicyAC = $("#recAC1").val();
-	storeReport.ReadyToEatSpicyInit = $("#recInitials1").val();
-	storeReport.ReadyToEatMildTemp = $("#recTemp2").val();
-	storeReport.ReadyToEatMildAC = $("#recAC2").val();
-	storeReport.ReadyToEatMildInit = $("#recInitials2").val();
-	storeReport.ReadyToEatTenderTemp = $("#recTemp3").val();
-	storeReport.ReadyToEatTenderInit = $("#recAC3").val();
-	storeReport.ReadyToEatTenderAC = $("#recInitials3").val();
-	storeReport.ReadyToEatLTOTemp = $("#recTemp4").val();
-	storeReport.ReadyToEatLTOInit = $("#recAC4").val();
-	storeReport.ReadyToEatLTOAC = $("#recInitials4").val();
+	localstorage.storeReport.Temp = $("#cTemp1").val(),
+	localstorage.storeReport.ReadyToEatSpicyTemp = $("#recTemp1").val();
+	localstorage.storeReport.ReadyToEatSpicyAC = $("#recAC1").val();
+	localstorage.storeReport.ReadyToEatSpicyInit = $("#recInitials1").val();
+	localstorage.storeReport.ReadyToEatMildTemp = $("#recTemp2").val();
+	localstorage.storeReport.ReadyToEatMildAC = $("#recAC2").val();
+	localstorage.storeReport.ReadyToEatMildInit = $("#recInitials2").val();
+	localstorage.storeReport.ReadyToEatTenderTemp = $("#recTemp3").val();
+	localstorage.storeReport.ReadyToEatTenderInit = $("#recAC3").val();
+	localstorage.storeReport.ReadyToEatTenderAC = $("#recInitials3").val();
+	localstorage.storeReport.ReadyToEatLTOTemp = $("#recTemp4").val();
+	localstorage.storeReport.ReadyToEatLTOInit = $("#recAC4").val();
+	localstorage.storeReport.ReadyToEatLTOAC = $("#recInitials4").val();
 	//LYS1: 
 
 	console.log(storeReport);
 	console.log(lastYearSales);
+});
+
+$("#setProperties4").click(function(){
+	$("topIntro1").html(localstorage.storeReport.Temp)
 });
 
 
