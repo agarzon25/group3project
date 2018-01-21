@@ -39,3 +39,6 @@
  	border: none;
  	text-align: center;
 }
+#GPLocalStorageClear {
+	float: right;
+}
