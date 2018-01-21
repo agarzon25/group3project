@@ -1,5 +1,5 @@
 
-#RDLtable th, #WSCtable th, #RDLtable td, #WSCtable td {
+#RDLtable th, #DSCtable th, #RDLtable td, #DSCtable td {
     border: 1px solid black;
     text-align: center;
     vertical-align: middle;
@@ -15,19 +15,19 @@
 #RDLvariance {
 	font-size: 9px;
 }
-#WSCdiv, #RDLdiv {
+#DSCdiv, #RDLdiv {
 	float: left;
     width: 340px;
     padding-left: 50px;
     margin: 50px;
 }
-#WSCdiv th, #WSCdiv td {
+#DSCdiv th, #DSCdiv td {
 	width: 30px;
 }
 #RDLdiv th, #RDLdiv td {
 	width: 30px;
 }
-#WSCdiv input {
+#DSCdiv input {
 	width: 100%;
  	background: none;
  	border: none;
