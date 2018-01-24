@@ -17,16 +17,15 @@
 }
 #DSCdiv, #RDLdiv {
 	float: left;
-    width: 340px;
-    padding-left: 50px;
+    width: 400px;
+    padding-left: 0px;
     margin: 50px;
+    font-family: Carter One;
+    text-align: center;
 }
-#DSCdiv th, #DSCdiv td {
-	width: 30px;
-}
-#RDLdiv th, #RDLdiv td {
-	width: 30px;
-}
+#DSCdiv th, #DSCdiv td, #RDLdiv th, #RDLdiv td {
+	padding: .2rem;
+} 
 #DSCdiv input {
 	width: 100%;
  	background: none;
@@ -41,4 +40,7 @@
 }
 #GPLocalStorageClear {
 	float: right;
+}
+#GPLocalStorageSave {
+	float: left;
 }
