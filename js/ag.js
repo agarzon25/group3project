@@ -17,16 +17,12 @@ $(document).ready(function() {
 		"Ice scoop used and properly stored?",
 		"Have you noticed any pest or rodent activity?",
 		"Additional coaching needed: "
-	]
+	];
 
-	// variable needed to make yes/no inputs unique
-	let input_id = 1
+	const results = {};
 
-	// Loop through each element in task and create table row for 
+	// Loop through each element in task and create table row  
 	task.forEach(function(t) {
-
-		// Increment input_id by 1
-		input_id++
 
 		// Creating div/writing to display task data
 		const taskDiv = $("<tr class='table-bordered'>");
@@ -35,18 +31,52 @@ $(document).ready(function() {
 		// Creating div/checkbox for yes column
 		const doneBox = $("<td>");
 		taskDiv.append(doneBox);
-		const done = $("<input type='checkbox'>")
-		done.attr("id", ("yes" + input_id))
+		const done = $("<input type='checkbox' value='incomplete'>")
+		done.attr("id", (t))
 		doneBox.append(done);
 
 		// Creating div/input box
 		const inputBox = $("<td>");
 		taskDiv.append(inputBox);
-		const boxInput = $("<input>")
-		boxInput.attr("id", ("boxInput" + input_id))
+		const boxInput = $("<input type='text'>")
+		boxInput.attr("id", (t + ":inputValue"))
 		inputBox.append(boxInput)
 
 		// Append taskDiv to tableData div
 		$("#tableData").append(taskDiv);
 	})
+
+
+	//Changing value of checkbox div on click and 
+	//saving it to results object
+	$('input:checkbox').click(function() {
+		const new_object = {
+			'complete': false, 'message': " " 
+		};
+		const textInput = $(this).closest('tr').find('input[type=text]');
+		const clickValue = $(this).attr("value")
+		const id = $(this).attr('id');
+		if (clickValue === 'incomplete') {
+			$(this).attr("value", 'complete');
+			const c_value = $(this).attr('value');
+			results[id] = c_value;
+			console.log(results)
+			new_object.complete = true
+			new_object.message = textInput.val();
+			// console.log($('#' + id + ":inputValue"));
+			//localStorage.setItem(id, c_value)
+		} else if (clickValue === 'complete') {
+			$(this).attr("value", 'incomplete');
+			const i_value = $(this).attr('value');
+			//localStorage.setItem(id, i_value)
+			results[id] = i_value
+			new_object.complete = false
+			new_object.message = textInput.val();
+		}
+		localStorage.setItem(id, JSON.stringify(new_object));
+	});
+
+
+	
+	
 })
