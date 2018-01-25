@@ -177,7 +177,9 @@
 <!-- Modal -->
 <div class="modal fade modal-lg" id="dailyTasksModal" tabindex="-1" role="dialog" aria-labelledby="dailyTasksModal1" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
+
+  </div>
+<!--    <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="dailyTasksModal1">Morning Tasks</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -359,6 +361,8 @@
     </div>
   </div>
 </div>
+
+-->
 
 
 
@@ -664,32 +668,29 @@
       </div>
       <div class="modal-body">
         <div class="container-fluid">
-    <table id="dayShift" class="table table-bordered">
+          <table id="dayShift" class="table table-bordered">
 
-      <!-- Table headers with dropdown menu and input box for initials --> 
-      <thead>
-        <th>
-          <div id="shiftPick">
-            <select class="custom-select">
-              <option selected>Pick a shift</option>
-              <option value="Day">Day</option>
-              <option value="Night">Night</option>
-            </select>
-            <div class="float-right">
-              <label for="intials">Completed by: </label>
-              <input type="text" id="initials" >
-            </div>
-          </div>
-        </th>
-        <th>Completed?</th>
-        <th id="input">Input</th>   
-      </thead>
-
-      <!-- Table generated via ag.js -->
-      <tbody id="tableData"></tbody>
-    </table>
-    <div id="buttonDiv" class="float-right"></div>
-  </div>
+            <!-- Table headers with dropdown menu and input box for initials --> 
+            <th>
+              <div id="shiftPick">
+                <select class="custom-select">
+                  <option selected>Pick a shift</option>
+                  <option value="Day">Day</option>
+                  <option value="Night">Night</option>
+                </select>
+                <div class="float-right">
+                  <label for="intials">Completed by: </label>
+                  <input type="text" id="initials" >
+                </div>
+              </div>
+            </th>
+            <th>Completed?</th>
+            <th id="input">Input</th>
+            <!-- Table generated via ag.js -->
+            <tbody id="tableData"></tbody>
+          </table>
+         <div id="buttonDiv" class="float-right"></div>
+      </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
