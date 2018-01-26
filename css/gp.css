@@ -44,3 +44,12 @@
 #GPLocalStorageSave {
 	float: left;
 }
+body {
+	font-family: Carter One;
+}
+#weatherApi, #timeApi {
+	text-align: center;
+}
+h2 {
+	font-size: 35px;
+}

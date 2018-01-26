@@ -25,7 +25,8 @@
 	padding:4px;
 }
 body {
-	background-image:url("https://images.firstwefeast.com/complex/images/c_limit,f_auto,fl_lossy,q_auto,w_1100/xcnbpr1e475lafy6eay9/popeyes")
+	background-image:url("https://images.firstwefeast.com/complex/images/c_limit,f_auto,fl_lossy,q_auto,w_1100/xcnbpr1e475lafy6eay9/popeyes");
+	background-size: 100% 240%;
 }
 #loginBlock {
 	background-image: url("https://pbs.twimg.com/profile_images/892045859386515456/huvlLQDV.jpg");

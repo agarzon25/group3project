@@ -49,34 +49,33 @@ $(document).ready(function() {
 
 	//Changing value of checkbox div on click and 
 	//saving it to results object
-	$('input:checkbox').click(function() {
-		const new_object = {
-			'complete': false, 'message': " " 
-		};
-		const textInput = $(this).closest('tr').find('input[type=text]');
-		const clickValue = $(this).attr("value")
-		const id = $(this).attr('id');
-		if (clickValue === 'incomplete') {
-			$(this).attr("value", 'complete');
-			const c_value = $(this).attr('value');
-			results[id] = c_value;
-			console.log(results)
-			new_object.complete = true
-			new_object.message = textInput.val();
-			// console.log($('#' + id + ":inputValue"));
-			//localStorage.setItem(id, c_value)
-		} else if (clickValue === 'complete') {
-			$(this).attr("value", 'incomplete');
-			const i_value = $(this).attr('value');
-			//localStorage.setItem(id, i_value)
-			results[id] = i_value
-			new_object.complete = false
-			new_object.message = textInput.val();
-		}
-		localStorage.setItem(id, JSON.stringify(new_object));
+	$('#setproperties4').on("click", function(){
+		$('input:checkbox').each(function() {
+			const new_object = {
+				'complete': false, 'message': " " 
+			};
+			const textInput = $(this).closest('tr').find('input[type=text]');
+			const clickValue = $(this).attr("value")
+			const id = $(this).attr('id');
+			if (clickValue === 'incomplete') {
+				$(this).attr("value", 'complete');
+				const c_value = $(this).attr('value');
+				results[id] = c_value;
+				console.log(results)
+				new_object.complete = true
+				new_object.message = textInput.val();
+				// console.log($('#' + id + ":inputValue"));
+				//localStorage.setItem(id, c_value)
+			} else if (clickValue === 'complete') {
+				$(this).attr("value", 'incomplete');
+				const i_value = $(this).attr('value');
+				//localStorage.setItem(id, i_value)
+				results[id] = i_value
+				new_object.complete = false
+				new_object.message = textInput.val();
+			}
+			localStorage.setItem(id, JSON.stringify(new_object));
+		});
 	});
-
-
-	
 	
 })

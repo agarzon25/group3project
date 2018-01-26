@@ -11,12 +11,11 @@
 <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="projectcss11.css">
 <link rel="stylesheet" type="text/css" href="projectcss1.css">
-<link rel="stylesheet" type="text/css" href="css/gp.css">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 
- <div class = "row" id = "topIntro1"><div class = "col-lg-6" id = "topIntroLeft1"></div><div id = "topIntroRight1"> <h2 id="weatherApi"></h2>
+ <div class = "row" id = "topIntro1"><div class = "col-lg-6" id = "topIntroLeft1"></div><div class = "col-lg-6" id = "topIntroRight1"> <h2 id="weatherApi"></h2>
     <!-- Add label for div above -->
     <h2 id="timeApi"></h2> </div></div>
 <div class="row" id = "position1">
@@ -62,23 +61,6 @@
       </div>
     </div>
   </div>
-  <div class = "col-md-6">
-      <div class= "card-header">
-        <h2 class = "card-title">Submit Completion</h2>
-         <div class="card-body">         
-          <p class="card-text"> Send Out Store Report </p>
-          <button type="button" class="btn btn-primary" id = "setProperties2">Send Report
-          </button>
-        </div>
-      </div>
-      <div class = "col-md-6">
-      <div class= "card-header">
-        <h2 class = "card-title">Store Ready</h2>
-         <div class="card-body">         
-          <p class="card-text"> Send Report When All Categories Light Completed </p>
-          <div id = "microphoneCheck1">0</div><div id = "microphoneCheck12">0</div><div id ="clapOnClapOff">0</div><div id = "theClapper">0</div>
-        </div>
-      </div>
 
 
 
@@ -94,7 +76,7 @@
         </button>
       </div>
       <div class="modal-body">
-<!--         <table class="table table-striped">
+        <table class="table table-striped">
       <thead>
     <tr>
       <th scope="col">Date</th>
@@ -181,201 +163,23 @@
     
       </tbody>
     </table> 
- -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id = "setProperties1">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div id='DSCdiv'>
-              <h1 id="DSCh1">Daily Safe<br>Count</h1>
-              
-              <table id="DSCtable" class="table table-striped">
-              <tbody>
-                <tr>
-                  <th scope="row">Date</th>
-                  <th class="RDLth" scope="col" colspan="3" id="DSCDate"></th>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Rolled<br>Coins</th>
-                  <td>Open</td>
-                  <td>Mid</td>
-                  <td>Close</td>
-                  </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Pennies</th>
-                  <td><input type="number" id="DSCOpenPennies"></td>
-                  <td><input type="number" id="DSCMidPennies"></td>
-                  <td><input type="number" id="DSCClosePennies"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Nickels</th>
-                  <td><input type="number" id="DSCOpenNickels"></td>
-                  <td><input type="number" id="DSCMidNickels"></td>
-                  <td><input type="number" id="DSCCloseNickels"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Dimes</th>
-                  <td><input type="number" id="DSCOpenDimes"></td>
-                  <td><input type="number" id="DSCMidDimes"></td>
-                  <td><input type="number" id="DSCCloseDimes"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Quarters</th>
-                  <td><input type="number" id="DSCOpenQuarters"></td>
-                  <td><input type="number" id="DSCMidQuarters"></td>
-                  <td><input type="number" id="DSCCloseQuarters"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Bills</th>
-                  <td>Open</td>
-                  <td>Mid</td>
-                  <td>Close</td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">1's</th>
-                  <td><input type="number" id="DSCOpenOnes"></td>
-                  <td><input type="number" id="DSCMidOnes"></td>
-                  <td><input type="number" id="DSCCloseOnes"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">5's</th>
-                  <td><input type="number" id="DSCOpenFives"></td>
-                  <td><input type="number" id="DSCMidFives"></td>
-                  <td><input type="number" id="DSCCloseFives"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">10's</th>
-                  <td><input type="number" id="DSCOpenTens"></td>
-                  <td><input type="number" id="DSCMidTens"></td>
-                  <td><input type="number" id="DSCCloseTens"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">20's</th>
-                  <td><input type="number" id="DSCOpenTwenties"></td>
-                  <td><input type="number" id="DSCMidTwenties"></td>
-                  <td><input type="number" id="DSCCloseTwenties"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">50's</th>
-                  <td><input type="number" id="DSCOpenFithy"></td>
-                  <td><input type="number" id="DSCMidFithy"></td>
-                  <td><input type="number" id="DSCCloseFithy"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">100's</th>
-                  <td><input type="number" id="DSCOpenHundreds"></td>
-                  <td><input type="number" id="DSCMidHundreds"></td>
-                  <td><input type="number" id="DSCCloseHundreds"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Safe<br>Count $</th>
-                  <td><input type="number" id="DSCOpenSafeCount"></td>
-                  <td><input type="number" id="DSCMidSafeCount"></td>
-                  <td><input type="number" id="DSCCloseSafeCount"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Register $</th>
-                  <td><input type="number" id="DSCOpenRegister"></td>
-                  <td><input type="number" id="DSCMidRegister"></td>
-                  <td><input type="number" id="DSCCloseRegister"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Total Safe</th>
-                  <td><input type="number" id="DSCOpenTotalSafe"></td>
-                  <td><input type="number" id="DSCMidTotalSafe"></td>
-                  <td><input type="number" id="DSCCloseTotalSafe"></td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row"></th>
-                  <td>Open</td>
-                  <td>Mid</td>
-                  <td>Close</td>
-                </tr>
-                <tr class="DSCsmallCell">
-                  <th scope="row">Mgr Initials</th>
-                  <td><input type="text" id="DSCOpenMgrInitials"></td>
-                  <td><input type="text" id="DSCMidMgrInitials"></td>
-                  <td><input type="text" id="DSCCloseMgrInitials"></td>
-                </tr>
-              </tbody>
-            </table>
-        </div>
-
-        <div id="RDLdiv">
-
-          <h1 id="RDLh1">Restaurant<br>Deposit Log</h1>
-
-            <table id="RDLtable" class="table table-striped">
-
-            <thead> 
-              <tr>
-                <th class="RDLth" scope="col">Date</th>
-                <th class="RDLth" scope="col" colspan="4" id="RDLDate"></th>
-              <tr>
-              <tr>  
-                <th class="RDLth" scope="row"></th>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td class="smallFontCell">Total Daily<br>Deposit</div></td>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <th scope="row">POS ideal<br>Deposit</th>
-                <td><input type="number" id="RDLPosIdealDeposit1"></td>
-                <td><input type="number" id="RDLPosIdealDeposit2"></td>
-                <td><input type="number" id="RDLPosIdealDeposit3"></td>
-                <td><input type="number" id="RDLPosIdealDepositTotal"></td>
-              </tr>
-              <tr>
-                <th scope="row">Manager<br>Bank<br>Deposit</th>
-                <td><input type="number" id="RDLManagerBankDeposit1"></td>
-                <td><input type="number" id="RDLManagerBankDeposit2"></td>
-                <td><input type="number" id="RDLManagerBankDeposit3"></td>
-                <td><input type="number" id="RDLManagerBankDepositTotal"></td>
-              </tr>
-              <tr>
-                <th scope="row">+/-<br>Variance<br>(should<br>be $0)</th>
-                <td><input type="number" id="RDLVariance1"></td>
-                <td><input type="number" id="RDLVariance2"></td>
-                <td><input type="number" id="RDLVariance3"></td>
-                <td><input type="number" id="RDLVarianceTotal"></td>
-              </tr>
-              <tr>
-                <th scope="row">MGR Signature</th>
-                <td><input type="number" id="RDLMGRsign1"></td>
-                <td><input type="number" id="RDLMGRsign2"></td>
-                <td><input type="number" id="RDLMGRsign3"></td>
-                <td><input type="number" id="RDLMGRsignTotal"></td>
-              </tr>
-              <tr>
-                <th scope="row" id="RDLmgrTookSign">Signature of MGR<br>that took all the<br>deposits from the day<br>to the bank (signing<br>here means you took<br>each deposit listed)</th>
-                <td><input type="number" id="RDLMGRtookDeposits1"></td>
-                <td><input type="number" id="RDLMGRtookDeposits2"></td>
-                <td><input type="number" id="RDLMGRtookDeposits3"></td>
-                <td><input type="number" id="RDLMGRtookDepositsTotal"></td>
-              </tr>
-            </tbody>
-        </table>
-
-        <button type="button" class="btn btn-primary" id="GPLocalStorageSave">Save Page</button>
-        <button type="button" class="btn btn-danger" id="GPLocalStorageClear">Clear Page</button>
-        </div>
-
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" id = "setProperties1">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
 
 
 <!-- Modal -->
 <div class="modal fade modal-lg" id="dailyTasksModal" tabindex="-1" role="dialog" aria-labelledby="dailyTasksModal1" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
+
+  </div>
+<!--    <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="dailyTasksModal1">Morning Tasks</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -552,11 +356,13 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id = "vvvv">Save changes</button>
+        <button type="button" class="btn btn-primary" id = "setProperties2">Save changes</button>
       </div>
     </div>
   </div>
 </div>
+
+-->
 
 
 
@@ -862,32 +668,29 @@
       </div>
       <div class="modal-body">
         <div class="container-fluid">
-    <table id="dayShift" class="table table-bordered">
+          <table id="dayShift" class="table table-bordered">
 
-      <!-- Table headers with dropdown menu and input box for initials --> 
-      <thead>
-        <th>
-          <div id="shiftPick">
-            <select class="custom-select">
-              <option selected>Pick a shift</option>
-              <option value="Day">Day</option>
-              <option value="Night">Night</option>
-            </select>
-            <div class="float-right">
-              <label for="intials">Completed by: </label>
-              <input type="text" id="initials" >
-            </div>
-          </div>
-        </th>
-        <th>Completed?</th>
-        <th id="input">Input</th>   
-      </thead>
-
-      <!-- Table generated via ag.js -->
-      <tbody id="tableData"></tbody>
-    </table>
-    <div id="buttonDiv" class="float-right"></div>
-  </div>
+            <!-- Table headers with dropdown menu and input box for initials --> 
+            <th>
+              <div id="shiftPick">
+                <select class="custom-select">
+                  <option selected>Pick a shift</option>
+                  <option value="Day">Day</option>
+                  <option value="Night">Night</option>
+                </select>
+                <div class="float-right">
+                  <label for="intials">Completed by: </label>
+                  <input type="text" id="initials" >
+                </div>
+              </div>
+            </th>
+            <th>Completed?</th>
+            <th id="input">Input</th>
+            <!-- Table generated via ag.js -->
+            <tbody id="tableData"></tbody>
+          </table>
+         <div id="buttonDiv" class="float-right"></div>
+      </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -899,6 +702,5 @@
 <script type="text/javascript" src ="sessionObject11.js"></script>
 <script type="text/javascript" src ="js/ag.js"></script>
 <script type="text/javascript" src ="js/gp.js"></script>
-<script type="text/javascript" src ="js/vd.js"></script>
 </body>
 </html>
